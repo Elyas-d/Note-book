@@ -1,0 +1,164 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* General Reset */
+* 
+/* Navbar Container */
+nav {
+    background-color: #333; /* Dark background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Navbar Links */
+nav a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+    background-color: #555; /* Lighten background on hover */
+    color: #fff;
+}
+
+/* Active Link Style (Optional) */
+nav a.active {
+    background-color: #007bff; /* Highlight active link */
+    color: #fff;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 5px 0;
+        width: 100%; /* Full-width links on small screens */
+    }
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for Notes */
+.note-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* "New Note" Link */
+.note-container > a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.note-container > a:hover {
+    background-color: #0056b3;
+}
+
+/* Notes Grid Layout */
+.notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Note Styling */
+.note {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Note Body */
+.note-body {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Note Buttons Container */
+.note-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button Styles */
+.note-buttons a, .note-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.note-view-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.note-view-button:hover {
+    background-color: #218838;
+}
+
+.note-edit-button {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.note-edit-button:hover {
+    background-color: #e0a800;
+}
+
+.note-delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.note-delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .notes {
+        grid-template-columns: 1fr;
+    }
+}
