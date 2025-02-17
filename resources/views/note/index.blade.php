@@ -3,7 +3,7 @@
         <a href="{{ route('note.create')}}">New Note</a>
         <div class="notes">
             @foreach ( $notes as $note )
-               <div class="note">
+               <div class="note bg-yellow-300">
                 <div class="note-body">
                     {{Str::words($note->note, 30)}}
                 </div>

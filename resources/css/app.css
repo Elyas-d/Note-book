@@ -48,12 +48,6 @@ nav a.active {
         width: 100%; /* Full-width links on small screens */
     }
 }
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
@@ -93,7 +87,7 @@ body {
 
 /* Individual Note Styling */
 .note {
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -101,7 +95,7 @@ body {
 }
 
 .note:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 

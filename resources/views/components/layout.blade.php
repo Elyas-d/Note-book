@@ -9,6 +9,11 @@
     </head>
     <body>
         <x-navbar></x-navbar>
+        @session('message')
+            <div class="success-message">
+                {{ session('message') }}
+            </div>
+        @endsession
         {{ $slot }}
     </body>
 </html>

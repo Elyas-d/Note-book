@@ -1,6 +1,6 @@
 <nav>
     <a href="#">Home</a>
-    <a href="#">Documents</a>
+    <a href="{{ route('note.index')}}">Notes</a>
     <a href="#">Download</a>
     <a href="#">Community</a>
     <a href="#">About</a>

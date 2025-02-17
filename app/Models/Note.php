@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Note extends Model
 {
-    use HasFactory; // Add this line
+    use HasFactory;
 
-    // Your model code here
+    protected $fillable = ['note'];
 }
